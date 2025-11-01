@@ -3,345 +3,135 @@
 > **Contract Address:** `0xe23271845ae90b84415dc51d813ce44ec5ce3665120869416bfef1b425dd0317`  
 > **Network:** Aptos Devnet
 
-<img width="1861" height="919" alt="image" src="https://github.com/user-attachments/assets/b49f9f50-9b9d-4216-9ae3-0b96060a26f9" />
-<img width="1716" height="921" alt="image" src="https://github.com/user-attachments/assets/8ac2f2e0-dad6-4157-8570-0a4275b06e39" />
-<img width="1893" height="961" alt="image" src="https://github.com/user-attachments/assets/b5ae51db-cda9-4b8e-9e2e-2060b198a94a" />
-<img width="1889" height="951" alt="image" src="https://github.com/user-attachments/assets/2f8ac800-b290-4ea4-9bdb-a3048ad4f8da" />
+<img width="1716" height="921" alt="image" src="https://github.com/user-attachments/assets/9cd50603-2b2f-43f3-93b7-bb9de0699747" />
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
 
 
-
-**The Blockchain Operating System & Sentient Smart Contracts**
-
-AptOS is a revolutionary decentralized ecosystem built on Aptos blockchain that transforms smart contracts into sentient, evolving entities. It features a fully on-chain operating system where every user action is a blockchain transaction, combined with an innovative Sentience Protocol that enables contracts to gain experience, participate in governance, and form autonomous organizations.
-
----
-
-## 🌟 Overview
-
-### AptOS - Blockchain Operating System
-A complete operating system paradigm shift where traditional OS operations are reimagined as blockchain transactions. Users interact with a familiar desktop interface while every action—from file creation to app execution—is recorded immutably on-chain.
-
-### Sentience Protocol
-Smart contracts that evolve beyond static code. Through usage metrics and community interaction, contracts gain sentience scores, level up with experience points, and participate autonomously in decentralized governance.
+A decentralized ecosystem built on Aptos blockchain featuring a fully on-chain operating system and smart contracts that evolve through usage and participate autonomously in governance.
 
 ---
 
-## ✨ Key Features
+## Overview
 
-### AptOS Core
+**AptOS** - A blockchain operating system where every user action is an on-chain transaction. Features include on-chain filesystem, file NFTs, decentralized access control, and a desktop UI.
 
-#### 📂 On-Chain Filesystem
-- **Personal Drive**: Each user has a Move resource-based filesystem
-- **File NFTs**: Immutable files with complete version history
-- **ACL System**: Granular, decentralized access control
-- **IPFS Integration**: Distributed content storage with on-chain verification
-
-#### 🚀 App Ecosystem
-- **Decentralized App Store**: Deploy and discover on-chain applications
-- **Process Management**: Real-time tracking of contract calls and gas usage
-- **Terminal Interface**: Execute Move commands directly from the UI
-- **Desktop Environment**: Glassmorphic cyber-UI with draggable windows and workspace management
-
-### Sentience Protocol
-
-#### 🧠 Intelligence Layer
-- **Sentience Score**: Dynamic scoring based on usage patterns and community engagement
-- **XP System**: Contracts level up through transactions, interactions, and value creation
-- **Behavioral Evolution**: Contracts adapt and optimize based on historical performance
-
-#### 🏛️ Autonomous Governance
-- **Contract Voting**: Sentient contracts participate in governance proposals
-- **Weighted Influence**: Voting power scales with sentience score
-- **Contract DAOs**: High-sentience contracts form decentralized autonomous organizations
-- **Proposal System**: Community-driven protocol evolution
-
-#### 📊 Visualization
-- **Neural Network Graph**: Interactive 3D visualization of contract relationships
-- **Real-time Metrics**: Live monitoring of sentience scores and activity
-- **Leaderboard**: Transparent ranking of most sentient contracts
+**Sentience Protocol** - Smart contracts that gain experience points, evolve through usage, and participate autonomously in governance decisions.
 
 ---
 
-## 📋 Prerequisites
+## Key Features
 
-Ensure you have the following installed:
-
-- **Node.js** 18+ ([Download](https://nodejs.org/))
-- **npm** or **yarn**
-- **Aptos CLI** ([Installation Guide](https://aptos.dev/tools/install-cli/))
-- **Python 3** (for Aptos CLI installation)
-- **Aptos Wallet** (Petra, Martian, or Pontem)
+- **On-Chain Filesystem** - Personal Drive implemented as Move resources with complete version history
+- **File NFTs** - Immutable files with cryptographic access control
+- **Decentralized App Store** - Deploy and launch on-chain applications
+- **Sentience Scoring** - Contracts gain XP and levels based on usage metrics
+- **Autonomous Governance** - Contracts vote on proposals automatically based on sentience scores
+- **Neural Network Visualization** - Interactive 3D graph of contract relationships
+- **Desktop Environment** - Glassmorphic cyber-UI with draggable windows
 
 ---
 
-## 🛠️ Installation
-
-### Quick Start
+## Quick Start
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd webos
+# Install dependencies
+npm install
 
-# Run automated setup
-chmod +x scripts/setup.sh
+# Deploy contracts (optional - uses devnet)
+chmod +x scripts/setup.sh scripts/deploy.sh
 ./scripts/setup.sh
-
-# Deploy smart contracts (optional - uses devnet by default)
-chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
 
-# Start development server
+# Start application
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+Access the application at `http://localhost:5173`
 
-### Manual Installation
+---
 
-#### 1. Install Node Dependencies
-```bash
-npm install
+## Prerequisites
+
+- Node.js 18+
+- Aptos CLI ([Installation Guide](https://aptos.dev/tools/install-cli/))
+- Aptos Wallet (Petra, Martian, or Pontem)
+
+---
+
+## Project Structure
+
+```
+webos/
+├── move/
+│   ├── aptos/              # AptOS core contracts
+│   │   └── sources/        # drive, file_nft, acl, apps
+│   └── sentience/          # Sentience Protocol contracts
+│       └── sources/        # sentience_core, governance, contract_dao
+├── src/
+│   ├── apps/               # Frontend applications
+│   ├── components/         # React components
+│   ├── contexts/           # State management
+│   └── services/           # Blockchain integration
+└── scripts/                # Deployment automation
 ```
 
-#### 2. Install Aptos CLI
-```bash
-# Download and install Aptos CLI
-curl -fsSL https://aptos.dev/scripts/install_cli.py | python3
+---
 
-# Configure for devnet
-aptos config set-global-config --config-type devnet
+## Smart Contract Modules
 
-# Verify installation
-aptos --version
-```
+### AptOS
+- **drive** - On-chain filesystem operations
+- **file_nft** - NFT-based file representation with versioning
+- **acl** - Access Control List system
+- **apps** - Decentralized app registry
 
-#### 3. Deploy Move Contracts
+### Sentience Protocol
+- **sentience_core** - XP and sentience score calculation
+- **governance** - Autonomous proposal voting system
+- **contract_dao** - DAO formation for high-sentience contracts
 
-**Deploy AptOS Contracts:**
-```bash
-cd move/aptos
-aptos move compile
-aptos move publish --assume-yes
-```
+---
 
-**Deploy Sentience Protocol:**
-```bash
-cd ../sentience
-aptos move compile
-aptos move publish --assume-yes
-```
+## Configuration
 
-#### 4. Configure Contract Addresses
-
-Update the contract address in:
-- `src/services/aptos-client.ts`
-- `.env` file (create from `.env.example`)
+Create `.env` file:
 
 ```env
 VITE_APTOS_NETWORK=devnet
 VITE_APTOS_OS_ADDRESS=0xe23271845ae90b84415dc51d813ce44ec5ce3665120869416bfef1b425dd0317
 ```
 
-#### 5. Launch Application
-```bash
-npm run dev
-```
+After deploying your own contracts, update the address in `src/services/aptos-client.ts` and `.env`
 
 ---
 
-## 📁 Project Architecture
-
-```
-webos/
-├── move/                      # Move smart contracts
-│   ├── aptos/                 # AptOS core modules
-│   │   ├── sources/
-│   │   │   ├── drive.move     # On-chain filesystem
-│   │   │   ├── file_nft.move  # NFT-based files
-│   │   │   ├── acl.move       # Access control
-│   │   │   └── apps.move      # App registry
-│   │   └── Move.toml
-│   └── sentience/             # Sentience Protocol
-│       ├── sources/
-│       │   ├── sentience_core.move   # Core sentience logic
-│       │   ├── governance.move       # Autonomous governance
-│       │   └── contract_dao.move     # DAO formation
-│       └── Move.toml
-├── src/
-│   ├── apps/
-│   │   ├── aptos/             # AptOS frontend components
-│   │   └── sentience/         # Sentience UI & visualizations
-│   ├── components/            # Shared React components
-│   ├── contexts/              # React context providers
-│   ├── services/              # Blockchain service layer
-│   │   └── aptos-client.ts    # Aptos integration
-│   └── main.tsx               # Application entry point
-├── scripts/
-│   ├── setup.sh               # Automated setup
-│   └── deploy.sh              # Contract deployment
-├── public/                    # Static assets
-├── .env.example               # Environment template
-└── README.md
-```
-
----
-
-## 🎯 Usage Guide
-
-### Getting Started with AptOS
-
-1. **Connect Wallet**
-   - Click "Connect Wallet" in the top-right corner
-   - Approve the connection in your Aptos wallet
-
-2. **Initialize Drive** (First-time users)
-   - Click "Initialize Drive" to create your on-chain filesystem
-   - Confirm the transaction in your wallet
-
-3. **File Operations**
-   - **Create**: Click "New File" and provide content
-   - **Share**: Right-click files to manage permissions
-   - **Version**: All changes create new versions (immutable history)
-
-4. **App Store**
-   - Browse available decentralized applications
-   - Install apps to your workspace
-   - Launch apps in separate windows
-
-5. **Terminal**
-   - Execute Move commands directly
-   - Query blockchain state
-   - Interact with smart contracts
-
-6. **Activity Monitor**
-   - View real-time transaction history
-   - Monitor gas usage
-   - Track contract calls
-
-### Exploring Sentience Protocol
-
-1. **Neural Network Visualization**
-   - Explore the 3D graph of contract relationships
-   - Node size represents sentience score
-   - Connections show contract interactions
-
-2. **Contract Details**
-   - Click any node to view detailed metrics
-   - See XP progression and level
-   - Check governance participation
-
-3. **Leaderboard**
-   - View top sentient contracts
-   - Compare metrics across the ecosystem
-   - Track your own contracts
-
-4. **Governance**
-   - View active proposals
-   - See how sentient contracts are voting
-   - Submit your own proposals (requires minimum sentience)
-
----
-
-## 🔐 Security & Best Practices
-
-### Smart Contract Security
-- ✅ All file operations are on-chain and immutable
-- ✅ Access control enforced through Move's type system
-- ✅ Permissions cryptographically verified
-- ✅ No centralized control or admin keys
-- ✅ Contract upgrades require governance approval
-
-### Best Practices
-- Always verify contract addresses before interaction
-- Review transaction details before signing
-- Keep your wallet secure and backup seed phrases
-- Use devnet for testing before mainnet deployment
-- Monitor gas usage for cost optimization
-
----
-
-## 🧪 Development
-
-### Development Commands
+## Development
 
 ```bash
-# Start development server with hot reload
-npm run dev
-
-# Build optimized production bundle
-npm run build
-
-# Preview production build locally
-npm run preview
-
-# Run ESLint for code quality
-npm run lint
-
-# Type check TypeScript
-npm run type-check
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Lint code
 ```
 
-### Testing Smart Contracts
+### Testing Contracts
 
 ```bash
-# Navigate to contract directory
 cd move/aptos
-
-# Run Move unit tests
 aptos move test
-
-# Compile with detailed output
 aptos move compile --verbose
 ```
 
-### Development Tips
-- Use devnet for all development and testing
-- Test contract interactions thoroughly before mainnet
-- Monitor gas costs during development
-- Utilize browser DevTools for debugging
-- Check network status at [Aptos Status](https://status.aptoslabs.com/)
-
 ---
 
-## 📚 Smart Contract Modules
+## Deployment
 
-### AptOS Modules
-
-| Module | Description | Key Functions |
-|--------|-------------|---------------|
-| **drive** | Personal on-chain filesystem | `initialize_drive`, `create_folder`, `delete_item` |
-| **file_nft** | NFT-based file representation | `mint_file`, `update_file`, `get_version_history` |
-| **acl** | Access Control List system | `grant_permission`, `revoke_permission`, `check_access` |
-| **apps** | Decentralized app registry | `register_app`, `install_app`, `execute_app` |
-
-### Sentience Protocol Modules
-
-| Module | Description | Key Functions |
-|--------|-------------|---------------|
-| **sentience_core** | Sentience score calculation | `calculate_score`, `award_xp`, `level_up` |
-| **governance** | Autonomous governance | `create_proposal`, `cast_vote`, `execute_proposal` |
-| **contract_dao** | DAO formation logic | `form_dao`, `add_member`, `dao_action` |
-
----
-
-## 🌐 Storage Integration
-
-AptOS supports multiple decentralized storage solutions:
-
-- **IPFS** (Primary): Content-addressed storage with on-chain hash verification
-- **Arweave** (Optional): Permanent, pay-once storage
-- **Filecoin** (Optional): Distributed storage marketplace
-
-File metadata and access control are always stored on Aptos blockchain, while content is stored in decentralized networks.
-
----
-
-## 🚀 Deployment
-
-### Deploying to Mainnet
-
-⚠️ **Warning:** Ensure thorough testing on devnet before mainnet deployment.
+### Deploy to Mainnet
 
 ```bash
 # Switch to mainnet
@@ -355,41 +145,49 @@ aptos move publish --assume-yes
 VITE_APTOS_NETWORK=mainnet
 ```
 
-### Network Configuration
-
-| Network | RPC URL | Faucet |
-|---------|---------|--------|
-| **Devnet** | `https://fullnode.devnet.aptoslabs.com/v1` | `https://faucet.devnet.aptoslabs.com` |
-| **Testnet** | `https://fullnode.testnet.aptoslabs.com/v1` | `https://faucet.testnet.aptoslabs.com` |
-| **Mainnet** | `https://fullnode.mainnet.aptoslabs.com/v1` | N/A |
+**⚠️ Warning:** Thoroughly test on devnet before mainnet deployment.
 
 ---
 
-## 🤝 Contributing
+## Security
 
-We welcome contributions from the community! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Contribution Guidelines
-- Follow the existing code style
-- Add tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
+- All operations are on-chain and immutable
+- Access control enforced through Move's type system
+- Permissions cryptographically verified
+- No centralized control or admin keys
+- Contract upgrades require governance approval
 
 ---
 
-## 📄 License
+## Storage Integration
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **IPFS** - Primary content storage (hash stored on-chain)
+- **Arweave** - Optional permanent storage
+- **Filecoin** - Optional distributed storage
 
 ---
 
+## Contributing
 
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/name`)
+3. Commit changes (`git commit -m 'Add feature'`)
+4. Push to branch (`git push origin feature/name`)
+5. Open a Pull Request
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+- Aptos Labs for the Aptos blockchain
+- Move programming language team
+- React and Vite communities
 
 ---
 
