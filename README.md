@@ -7,7 +7,8 @@
 
 <img width="1861" height="919" alt="image" src="https://github.com/user-attachments/assets/1aea3e60-db65-4f87-8997-3f40672fe784" />
 <img width="1889" height="951" alt="image" src="https://github.com/user-attachments/assets/6f9f9bb7-6a1d-4bd5-b835-0718252fbdd6" />
-![Uploading image.png…]()
+<img width="1893" height="961" alt="image" src="https://github.com/user-attachments/assets/798c7c39-44e9-4d88-90ee-30a3047da7be" />
+
 
 
 A decentralized ecosystem built on Aptos blockchain featuring a fully on-chain operating system and smart contracts that evolve through usage and participate autonomously in governance.
