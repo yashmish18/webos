@@ -1,0 +1,23 @@
+[package]
+name = "AptOS"
+version = "1.0.0"
+
+[addresses]
+aptos_os = "0x73aafd3c7915568d2b58e03f131e3761eb559dcbe0fefa4a906f5bd269a74bd5"
+std = "0x1"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "devnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "devnet"
+subdir = "aptos-move/framework/aptos-stdlib"
+
+[dependencies.AptosToken]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "devnet"
+subdir = "aptos-move/framework/aptos-token"
+
