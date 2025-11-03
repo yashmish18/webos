@@ -3,6 +3,11 @@
 > **Contract Address:** `0xe23271845ae90b84415dc51d813ce44ec5ce3665120869416bfef1b425dd0317`  
 > **Network:** Aptos Devnet
 
+<img width="1080" height="1461" alt="image" src="https://github.com/user-attachments/assets/feaafc96-0df2-405a-97ed-cde190052d05" />
+<img width="1011" height="1600" alt="image" src="https://github.com/user-attachments/assets/ec63ab71-2a73-41b5-a24f-2c9adddd9e3b" />
+
+
+
 <img width="1716" height="921" alt="image" src="https://github.com/user-attachments/assets/9cd50603-2b2f-43f3-93b7-bb9de0699747" />
 
 <img width="1861" height="919" alt="image" src="https://github.com/user-attachments/assets/1aea3e60-db65-4f87-8997-3f40672fe784" />
